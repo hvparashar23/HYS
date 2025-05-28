@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(page_title="HYS Consulting", page_icon="💼", layout="wide")
 import os
 from PIL import Image
 from datetime import datetime
@@ -10,7 +11,7 @@ from streamlit_cookies_manager import EncryptedCookieManager
 VISIT_LOG = "visit_logs.txt"
 CONTACT_LOG = "contact_logs.txt"
 
-st.set_page_config(page_title="HYS Consulting", page_icon="💼", layout="wide")
+
 
 # ---------------------- COOKIES ----------------------
 cookies = EncryptedCookieManager(
